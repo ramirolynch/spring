@@ -1,0 +1,19 @@
+
+public class User {
+	
+	private String firstName;
+	private String lastName;
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+		System.out.println("no argument constructor");
+	}
+	public User(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		
+		System.out.println("no argument constructor");
+	}
+
+}
