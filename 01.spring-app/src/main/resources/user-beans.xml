@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -20,5 +21,17 @@
 			<value>Patil</value>
 		</property>
 	</bean>
+	
+	<!-- value with namespaces -->
+<bean id="user3" class="co.ramirolynch.spring.core.beans.User" p:firstName="Juan" p:lastName="Perez"></bean>
+
+<!-- value with arguments -->
+	 
+	 <bean id="user4" class="co.ramirolynch.spring.core.beans.User">
+		<constructor-arg value="Sebastian"></constructor-arg>
+		<constructor-arg value="Rodriguez"></constructor-arg>
+	</bean>
+	 
+	 
 
 </beans>
