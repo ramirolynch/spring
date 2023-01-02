@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- bean definitions here -->
+	<!-- value as an attribute -->
+	<context:annotation-config />
+	<!-- scope="prototype" creates an object everytime scope="singleton" only one object and the same object is used every time -->
+	<bean id="apollo" class="co.ramirolynch.spring.core.beans.Hospital">
+		<property name="hospitalName" value="Loyola Hospitals Limited"></property>
+		<property name="deptHeads">
+			<map>
+				<entry key="Reception" value="Miss. Sanjana"></entry>
+				<entry key="Operation Theater" value="Dr. Aravind"></entry>
+				<entry key="Pharmacy" value="Mr. Kiran"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
+
