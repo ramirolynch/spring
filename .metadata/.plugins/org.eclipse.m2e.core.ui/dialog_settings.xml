@@ -45,16 +45,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="co.ramirolynch"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="08.spring-collections-list"/>
-			<item value="05.spring-di-setter"/>
-			<item value="04.spring-bean-inheritance"/>
-			<item value="03.spring-life-cycle"/>
-			<item value="02.spring-app"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,6 +68,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/ramirolynch/eclipse-workspace/spring/ajax"/>
 			<item value="/Users/ramirolynch/eclipse-workspace/spring/11.spring-jdbc"/>
 		</list>
 		<list key="projectNameTemplate">
